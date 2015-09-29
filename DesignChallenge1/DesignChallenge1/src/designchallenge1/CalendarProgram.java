@@ -34,6 +34,8 @@ public class CalendarProgram{
 	public JTable calendarTable;
         public DefaultTableModel modelCalendarTable;
         
+        private ArrayList<Cell> events = new ArrayList<>();
+        private Cell holder;        
         public void refreshCalendar(int month, int year)
         {
 		String[] months =  {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
@@ -102,6 +104,9 @@ public class CalendarProgram{
                     {  
                         int col = calendarTable.getSelectedColumn();  
                         int row = calendarTable.getSelectedRow();  
+                        
+                       // holder = new Cell();
+                        //events.add()
                     }
                 });
                 
